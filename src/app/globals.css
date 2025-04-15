@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme{
+  --color-green-home: #00aa58;
+  --color-lime-green: #eaff8b
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+
+.glass{
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.3px);
+  -webkit-backdrop-filter: blur(5.3px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.filter-home{
+  background: rgb(118,255,159);
+  background: linear-gradient(133deg, rgba(118,255,159,1) 0%, rgba(153,79,185,1) 100%); 
 }
+
+.glass-green{
+/* From https://css.glass */
+background: rgba(220, 243, 142, 0.48);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.3px);
+-webkit-backdrop-filter: blur(5.3px);
+}
+
+.glass_blue{
+  /* From https://css.glass */
+  background: rgba(131, 230, 255, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(131, 230, 255, 0.3);
+}
+
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Raleway Variable', sans-serif;
+  background: rgb(65,136,227);
+  background: linear-gradient(180deg, rgba(65,136,227,0.9304315476190477) 49%, rgba(255,255,255,1) 100%);
+  min-height: 100vh;
 }
