@@ -76,7 +76,7 @@ export default function Home() {
     
       <section className="min-h-screen flex flex-col items-center justify-center rounded-3xl">
         <h2 className="text-[4rem] text-slate-100 font-semibold tracking-wide">Membresias</h2>
-        <div className='flex justify-center gap-4'>
+        <div className='grid grid-cols-3 gap-4'>
           {plansInfo.map((plan, index) => (
               <PlanCard
                   plan={plan}

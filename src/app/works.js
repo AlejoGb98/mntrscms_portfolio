@@ -3,7 +3,7 @@ const works = [
         'id': 'legal-coach',
         'nombre': 'Legal Coach',
         'descripcion': 'Terapias olisticas con un enfoque de tratamiento que considera al ser humano como una unidad de cuerpo, mente y espíritu.',
-        'concepto': 'Coaching a Emprendedores',
+        'concepto': 'Coaching a emprendedores',
         'logo': '/assets/legal_coach/logo.png',
         'posts' : [
             '/assets/legal_coach/01.png',

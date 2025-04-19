@@ -17,11 +17,9 @@ const PersonalPlan = () => {
 
         
         
-        <div className="py-1 min-h-16 relative">
-            <div className='absolute bottom-1'>
-                <p className="text-black text-3xl font-bold">¡Charlemos!</p>
-                <p className="text-sm text-gray-400">*15% de descuento en el primer mes para nuevos usuarios</p>
-            </div>
+        <div className="py-1 min-h-20 relative">
+            <p className="text-black text-3xl font-bold">¡Charlemos!</p>
+            <p className="text-sm text-gray-400">*15% de descuento en el primer mes para nuevos usuarios</p>
         </div>
 
         <button className='text-slate-100 text-xl tracking-wider py-3 my-3 px-6 bg-black rounded-4xl border-[1px]
@@ -29,7 +27,7 @@ const PersonalPlan = () => {
             Contactarme
         </button>
     
-        <div className="py-2 flex flex-col gap-2 min-h-48">
+        <div className="py-3 flex flex-col gap-2 min-h-48">
             {
                 plan.contenido.map((item, index) => (
                     <div className='flex items-center gap-2' key={index}>

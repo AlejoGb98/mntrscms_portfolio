@@ -24,7 +24,7 @@ const PlanCard = ({plan}) => {
                 <p>{plan.descripcion}</p>
             </div>
             
-            <div className="py-1 min-h-16">
+            <div className="py-1 min-h-20">
                 <div className='flex gap-2 items-center'>
                     <p className="text-neutral-400 text-2xl font-bold line-through">${plan.precioOriginal}/mes</p>
                     <p className="text-black text-3xl font-bold">${plan.precio}<span className='text-lg'>/mes</span></p>
@@ -37,16 +37,7 @@ const PlanCard = ({plan}) => {
                 Suscribirme
             </button>
      
-            <div className="py-2 flex flex-col gap-2 min-h-48">
-                {
-                    plan.nombre != "Plus" && 
-                    <div className='flex items-center gap-2'>
-                        <div className='place-self-start py-1'>
-                            <Image src={LeftArrow} height={200} width={200} className='w-4 h-4' alt='check list image'/>
-                        </div>
-                        <p className="font-semibold">Todo lo del plan anterior más: </p>
-                    </div>
-                }
+            <div className="py-3 flex flex-col gap-2 min-h-48">
                 {
                     plan.contenido.map((item, index) => (
                         <div className='flex items-center gap-2' key={index}>
