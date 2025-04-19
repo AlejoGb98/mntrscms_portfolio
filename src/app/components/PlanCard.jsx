@@ -17,21 +17,23 @@ const PlanCard = ({plan}) => {
     }
 
   return (
-    <div className={`flex flex-col bg-slate-50 rounded-3xl border-[2px] py-2 px-8 overflow-hidden max-w-[28rem]`}>
+    <div className={`flex flex-col bg-slate-50 rounded-3xl border-[2px] py-4 px-8 overflow-hidden max-w-[28rem]`}>
        
             <h2 className={`text-3xl py-2 font-semibold`}>{plan.nombre}</h2>
             <div className="py-1 min-h-20">
                 <p>{plan.descripcion}</p>
             </div>
             
-            <div className="py-1 min-h-24">
-                <p className="text-neutral-400 text-2xl font-bold line-through">${plan.precioOriginal}</p>
-                <p className="text-black text-3xl font-bold">${plan.precio}<span className='text-lg'>/mes</span></p>
+            <div className="py-1 min-h-16">
+                <div className='flex gap-2 items-center'>
+                    <p className="text-neutral-400 text-2xl font-bold line-through">${plan.precioOriginal}/mes</p>
+                    <p className="text-black text-3xl font-bold">${plan.precio}<span className='text-lg'>/mes</span></p>
+                </div>
                 <p className="text-sm text-gray-400 ">*15% de descuento en el primer mes para nuevos usuarios</p>
             </div>
 
-            <button className='text-slate-100 text-xl tracking-wider py-4 my-2 px-6 bg-black rounded-4xl border-[1px]
-                                transition-all duration-200 hover:scale-105'>
+            <button className='text-slate-100 text-xl tracking-wider py-3 my-3 px-6 bg-black rounded-4xl border-[1px]
+                                transition-all duration-200 hover:scale-105 cursor-pointer'>
                 Suscribirme
             </button>
      
@@ -66,7 +68,7 @@ const PlanCard = ({plan}) => {
 
             </div>
             
-            <div className='py-3'>
+            <div className=''>
                 <p className='font-semibold text-lg'>Servicios incluidos</p>
                 <div className='flex flex-wrap gap-2 py-2'>
                     {

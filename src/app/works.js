@@ -33,8 +33,8 @@ const works = [
     {   
         'id': 'cristina-garcia',
         'nombre': 'Cristina García',
-        'descripcion': 'Terapias olisticas con un enfoque de tratamiento que considera al ser humano como una unidad de cuerpo, mente y espíritu.',
-        'concepto': 'Terapias olisticas',
+        'descripcion': 'Terapias holisticas con un enfoque de tratamiento que considera al ser humano como una unidad de cuerpo, mente y espíritu.',
+        'concepto': 'Terapias holisticas',
         'logo': '/assets/cristina_garcia/logo.png',
         'posts' : [
             '/assets/cristina_garcia/01.png',

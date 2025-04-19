@@ -8,7 +8,7 @@ import Image from 'next/image'
 const PersonalPlan = () => {
 
   return (
-        <div className={`flex flex-col bg-slate-50 rounded-3xl border-[2px] py-2 px-8 overflow-hidden max-w-[28rem]`}>
+        <div className={`flex flex-col bg-slate-50 rounded-3xl border-[2px] py-4 px-8 overflow-hidden max-w-[28rem]`}>
            
         <h2 className={`text-3xl py-2 font-semibold`}>{plan.nombre}</h2>
         <div className="py-1 min-h-20">
@@ -17,15 +17,15 @@ const PersonalPlan = () => {
 
         
         
-        <div className="py-1 min-h-24 relative">
+        <div className="py-1 min-h-16 relative">
             <div className='absolute bottom-1'>
-                <p className="text-black text-3xl font-bold">Adaptable<span className='text-lg'>/mes</span></p>
+                <p className="text-black text-3xl font-bold">¡Charlemos!</p>
                 <p className="text-sm text-gray-400">*15% de descuento en el primer mes para nuevos usuarios</p>
             </div>
         </div>
 
-        <button className='text-slate-100 text-xl tracking-wider py-4 my-2 px-6 bg-black rounded-4xl border-[1px]
-                            transition-all duration-200 hover:scale-105'>
+        <button className='text-slate-100 text-xl tracking-wider py-3 my-3 px-6 bg-black rounded-4xl border-[1px]
+                            transition-all duration-200 hover:scale-105 cursor-pointer'>
             Contactarme
         </button>
     
@@ -50,7 +50,7 @@ const PersonalPlan = () => {
             </div>
         </div>
         
-        <div className='py-3'>
+        <div className=''>
             <p className='font-semibold text-lg'>Servicios disponibles</p>
             <div className='flex flex-wrap gap-2 py-2'>
                 {

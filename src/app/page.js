@@ -23,12 +23,12 @@ export default function Home() {
       <div className="min-h-screen flex flex-col items-center justify-center pb-12 overscroll-auto">
         
         <div className="flex flex-1 gap-6 justify-center items-center glass w-full">
-          <Image src={Character} height={1000} width={1000} className="w-60 h-60" alt="Rafael Silveira cartoon saludando y sonriendo."/>
+          <Image src={Character} height={1000} width={1000} className="w-52 h-w-52" alt="Rafael Silveira cartoon saludando y sonriendo."/>
 
           <div className="h-fit">
             
-            <h1 className="text-7xl font-semibold text-slate-100 font-oswald">Rafael Silveira</h1>
-            <p className='text-3xl min-h-12 text-slate-100 pl-1'>
+            <h1 className="text-6xl font-semibold text-slate-100 font-oswald">Rafael Silveira</h1>
+            <p className='text-2xl min-h-12 text-slate-100 pl-1'>
               <Typewriter words={['Diseñador Gráfico', 'Diseñador Web', 'Fotógrafo']} loop={Infinity} />
             </p>
           </div> 
@@ -36,7 +36,7 @@ export default function Home() {
 
       </div>
 
-      <div className="font-oswald grid grid-cols-2 justify-items-center w-full items-center py-24 text-xl gap-12 text-slate-100">
+      <div className="min-h-screen font-oswald grid grid-cols-2 justify-items-center w-full items-center text-xl gap-12 text-slate-100">
         <p className="text-6xl w-72">
           <span className="font-bold">Diseño Gráfico</span>, de <span className="font-bold"> Marca</span>, <span className="font-bold">Web</span> & <span className="font-bold">Redes Sociales</span>
         </p>
@@ -58,7 +58,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="flex flex-col items-center">
+      <section className="min-h-screen flex flex-col items-center">
         <h2 className="text-[4rem] text-slate-100 font-semibold mb-5">Proyectos</h2>
 
         <div className="flex justify-center gap-8 w-full py-4 px-8">
@@ -74,8 +74,8 @@ export default function Home() {
 
       </section>
     
-      <section className="flex flex-col items-center justify-center py-6 rounded-3xl">
-        <h2 className="text-[4rem] text-zinc-900 font-semibold tracking-wide">Membresias</h2>
+      <section className="min-h-screen flex flex-col items-center justify-center rounded-3xl">
+        <h2 className="text-[4rem] text-slate-100 font-semibold tracking-wide">Membresias</h2>
         <div className='flex justify-center gap-4'>
           {plansInfo.map((plan, index) => (
               <PlanCard

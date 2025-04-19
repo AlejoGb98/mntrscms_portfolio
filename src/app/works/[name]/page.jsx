@@ -43,11 +43,11 @@ const Work = () => {
         <div className='grid grid-cols-3 justify-items-center px-8 gap-6'>
             {
               showContent.map(image => (
-                <Image src={image} width={1000} height={1000} className='w-fit  rounded-lg' alt='Foto' key={image} />
+                <Image src={image} width={1000} height={1000} className='w-sm h-auto rounded-lg' alt='Foto' key={image} />
               ))
             }
         </div>
-        <p></p>
+   
       </div>
 
       
